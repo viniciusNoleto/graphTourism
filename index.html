@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mapa XperienceFinder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-screen h-screen">
+    <main id="app" class="flex flex-col">
+      <div class="relative overflow-hidden rounded-b-2xl h-[250px]">
+        <ol-map />
+      </div>
+      <input id="selector" type="hidden">
+    </main>
+    
+    <script type="module">
+
+      import OlMap from '/olMap.vue';
+
+      const { createApp, ref } = Vue;
+
+      createApp({
+        setup() {
+
+          const data = ref([
+            {enterprise: 'Darrell Hale', routes: ['Monte Roraima', 'Tepequém', 'Monte Caburaí']},
+            {enterprise: 'Edwin Harper', routes: ['Bosque dos Papagaios', 'Parque Anauá', 'Monte Caburaí']},
+            {enterprise: 'Estelle George', routes: ['Parque Anauá', 'Canarinho', 'Bosque dos Papagaios']},
+            {enterprise: 'Esther Hernandez', routes: ['Mirante', 'Canarinho', 'Bosque dos Papagaios']},
+            {enterprise: 'Derrick Fletcher', routes: ['Mirante', 'Parque Anauá', 'Bosque dos Papagaios']},
+          ]);
+
+          return {
+            data
+          }
+
+        }
+      }).mount('#app');
+
+    </script>
+  </body>
+</html>
