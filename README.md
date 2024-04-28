@@ -1,18 +1,7 @@
-# OpenLayers + Vite
+# Graph Tourism
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+## Grupo: Roraima Explorer Team
+## Sistema: é Xperience Finder
 
-To get started, run the following (requires Node 14+):
-
-    npx create-ol-app my-app --template vite
-
-Then change into your new `my-app` directory and start a development server (available at http://localhost:5173):
-
-    cd my-app
-    npm start
-
-To generate a build ready for production:
-
-    npm run build
-
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+Este repositório foi criado para guardar o código referente ao sistema desenvolvido para o Hackatour 2024.
+O código contido em index.html não está completo pois ele reflete o conteúdo que foi inserido diretamente dentro do wordpress para a aprensetação.
